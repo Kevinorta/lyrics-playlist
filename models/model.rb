@@ -43,7 +43,7 @@ class Playlist
         playlist.tracks.each do |track|
             @songs << Song.new(track.name, track.artists.first.name, track.album.images.first["url"])
         end
-    end
+    end 
     
     def get_lyrics
         @songs.each do |song|
